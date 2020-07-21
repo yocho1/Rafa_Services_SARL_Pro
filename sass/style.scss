@@ -1,0 +1,12 @@
+body{
+    background-color: red($color: #000000);
+    p{
+        text-align: center;
+    }
+    h1{
+        color: blue($color: #000000);
+    }
+    h3{
+        background-color: blue($color: #000000);
+    }
+}
