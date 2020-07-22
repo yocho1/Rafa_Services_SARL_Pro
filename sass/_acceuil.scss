@@ -7,14 +7,16 @@
         font-size: .9rem;
         letter-spacing: .1rem;
         background: rgba(255, 255, 255, 1) !important;
-    }
-    .navbar-brand img{
+        .navbar-brand img{
         
             height: 4rem;
         
+        }
+        div .navbar-nav li{
+            padding-right: .9rem;
+        }
     }
-    div .navbar-nav li{
-        padding-right: .9rem;
-    }
+
+
 
 }
