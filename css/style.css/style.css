@@ -9,6 +9,9 @@
 #acceuil .navbar-brand img {
   height: 4rem; }
 
+#acceuil div .navbar-nav li {
+  padding-right: .9rem; }
+
 * {
   overflow-x: hidden;
   padding: 0;
