@@ -69,13 +69,34 @@ nav .navbar-toggler {
   background-color: #39339a;
   color: white; }
 
+.section-presentation {
+  text-align: center; }
+  .section-presentation h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 10px; }
+  .section-presentation h2:after {
+    display: block;
+    margin: 0 auto;
+    background-color: #39339a;
+    height: 2px;
+    width: 20%;
+    content: "";
+    margin-top: 20px; }
+  .section-presentation p {
+    line-height: 190%;
+    margin-left: 15%;
+    width: 70%;
+    padding-bottom: 30px; }
+
 * {
   overflow-x: hidden;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: Montserrat, sans-serif; }
-
-.row {
-  max-width: 1140px;
-  margin: 0 auto; }
