@@ -75,3 +75,7 @@ nav .navbar-toggler {
   margin: 0;
   box-sizing: border-box;
   font-family: Montserrat, sans-serif; }
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto; }
