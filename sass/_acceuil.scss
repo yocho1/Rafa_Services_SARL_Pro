@@ -1,30 +1,82 @@
+/* navbar */
 
+#home .navbar{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(255, 255, 255, 1) !important;
+}
 
-#acceuil{
-    .navbar{
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: .9rem;
-        letter-spacing: .1rem;
-        background: rgba(255, 255, 255, 1) !important;
-        .navbar-brand img{
-        
-            height: 4rem;
-        
-        }
-        div .navbar-nav li{
-            padding-right: .9rem;
-        }
-        .nav-link{
-            color:#4B4B4B;
-            padding-top: .8rem;
-        }
-        .nav-link.active,
-        .nav-link:hover{
-            color: #39339a;
-        } 
-    }
+.navbar-brand img{
+    height: 4rem;
+}
 
+div .navbar-nav li{
+    padding-right: .9rem;
+}
 
+div .navbar-dark .navbar-nav .nav-link{
+    color:#4B4B4B;
+    padding-top: .8rem;
+}
 
+div .navbar-dark .navbar-nav .nav-link.active,
+div .navbar-dark .navbar-nav .nav-link:hover{
+    color: #39339a;
+} 
+nav .navbar-toggler{
+    background-color: #222222;
+}
+
+/* slider */
+
+.s1 {
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)),  url(../assets/slide1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.s2{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)), url(../assets/piscine.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.s3{
+    height: 100vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, .7)),  url(../assets/slide1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.carousel-caption{
+    position: absolute;
+    top: 38%;
+    text-transform: uppercase;
+}
+
+.carousel-caption h1{
+  font-weight: 700;
+  letter-spacing: .3;
+  padding-bottom: 1rem;
+
+}
+.carousel-caption p{
+    letter-spacing: .3;
+    padding-bottom: 1rem;
+  
+  }
+.carousel-item .btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    font-size: 1.1rem;
+}
+.carousel-item .btn-lg:hover{
+    background-color: #39339a;
+    color: white;
 }
