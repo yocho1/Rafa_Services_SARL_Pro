@@ -94,6 +94,55 @@ nav .navbar-toggler {
     width: 70%;
     padding-bottom: 30px; }
 
+.section-details {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .section-details div {
+    border: 1px solid  #39339a; }
+  .section-details .col1 {
+    margin-bottom: 20px; }
+    .section-details .col1 img {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      left: 30%;
+      margin-bottom: 10px; }
+    .section-details .col1 h3, .section-details .col1 p {
+      text-align: center; }
+  .section-details .col2 {
+    margin-bottom: 20px; }
+    .section-details .col2 img {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      left: 30%;
+      margin-bottom: 10px; }
+    .section-details .col2 h3, .section-details .col2 p {
+      text-align: center; }
+  .section-details .col3 {
+    margin-bottom: 20px; }
+    .section-details .col3 img {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      left: 30%;
+      margin-bottom: 10px; }
+    .section-details .col3 h3, .section-details .col3 p {
+      text-align: center; }
+  .section-details .col4 {
+    margin-bottom: 20px; }
+    .section-details .col4 img {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      left: 30%;
+      margin-bottom: 10px; }
+    .section-details .col4 h3, .section-details .col4 p {
+      text-align: center; }
+
 * {
   overflow-x: hidden;
   padding: 0;
