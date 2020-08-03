@@ -162,6 +162,21 @@ nav .navbar-toggler {
   content: "";
   margin-top: 20px; }
 
+.projects-section .projects-showcase {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+  .projects-section .projects-showcase li {
+    width: 25%; }
+    .projects-section .projects-showcase li figure {
+      width: 100%;
+      margin: 0; }
+      .projects-section .projects-showcase li figure img {
+        width: 100%; }
+
 * {
   overflow-x: hidden;
   padding: 0;
