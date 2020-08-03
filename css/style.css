@@ -174,9 +174,17 @@ nav .navbar-toggler {
       width: 25%; }
       .projects-section .projects-showcase li figure {
         width: 100%;
-        margin: 0; }
+        margin: 0;
+        overflow: hidden;
+        background-color: #000; }
         .projects-section .projects-showcase li figure img {
-          width: 100%; }
+          width: 100%;
+          transform: scale(1.15);
+          transition: transform 0.5s;
+          opacity: 0.7; }
+        .projects-section .projects-showcase li figure img:hover {
+          transform: scale(1);
+          opacity: 1; }
 
 * {
   overflow-x: hidden;
