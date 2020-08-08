@@ -1,0 +1,30 @@
+h2{
+    color: black;
+    text-align: center;
+}
+.line{
+    width: 17%;
+    height: 2px;
+    background-color: #39339a;
+    display: block;
+    margin: 0 auto;
+}
+.pourquoi{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-image: url(../images/images\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+}
+
+.pourquoi__srv__nous{
+    border: #39339a 1px solid;
+    width: 225px;
+    height: 250px;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(238, 238, 238, 0.479);
+  
+}
