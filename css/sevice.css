@@ -17,6 +17,7 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
+    
 }
 
 .pourquoi__srv__nous{
@@ -26,7 +27,14 @@ h2{
     text-align: center;
     padding: 15px;
     background-color: rgba(238, 238, 238, 0.479);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
       
+}
+.pourquoi__srv__nous:hover{
+    -webkit-transform: rotate(-15deg);
+    transform: rotate(-15deg);
+    
 }
 .pourquoi :hover{
     background-color: rgba(255, 255, 255, 0);
@@ -90,5 +98,6 @@ I{
     background-color: #2e65f9;
     color: white;
 }
+
 
 
