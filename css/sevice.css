@@ -26,5 +26,31 @@ h2{
     text-align: center;
     padding: 15px;
     background-color: rgba(238, 238, 238, 0.479);
-  
+      
 }
+.pourquoi :hover{
+    background-color: rgb(69, 67, 153);
+}
+
+/* ----------------------services-------------------- */
+.contact{
+    margin-top: 35px;
+    background-image: url(../images/bg-construction-2.jpg);
+    background-size: cover;
+    height: 379px;
+}
+.contact__par{
+    width: 40%;
+    padding: 20px 30px;
+    float: right;
+    background-color: #f0f0f7e3;
+}
+.contact__par__list{
+    margin-top: 35px;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+/* -----------------footer-------------------- */
+
