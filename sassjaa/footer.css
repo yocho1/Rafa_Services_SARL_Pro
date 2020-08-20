@@ -1,7 +1,7 @@
 .footer {
   font-family: Montserrat, sans-serif;
   background-image: url(../images/335459-world-map-dark-photoshopped-world_map-748x468.jpg);
-  height: 241px;
+  overflow: auto;
 }
 
 .footer .footer__sujet {
@@ -16,6 +16,7 @@
 
 .footer .footer__sujet .footer__ap {
   width: 50%;
+  padding: 20px;
 }
 
 .footer .footer__sujet .footer__ap .line-footer {
