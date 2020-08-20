@@ -1,0 +1,27 @@
+.contact {
+  margin-top: 35px;
+  background-image: url(../images/bg-construction-2.jpg);
+  background-size: cover;
+  height: 379px;
+}
+
+.contact .contact__par {
+  width: 40%;
+  padding: 20px 30px;
+  float: right;
+  background-color: #f0f0f7e3;
+}
+
+.contact .contact__par .contact__par__list {
+  margin-top: 35px;
+}
+
+.contact .contact__par .contact__par__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=services.css.map */

@@ -15,5 +15,13 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^4.1.0",
     "gulp-watch-sass": "^1.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yocho1/Rafa_Services_SARL_Pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yocho1/Rafa_Services_SARL_Pro/issues"
+  },
+  "homepage": "https://github.com/yocho1/Rafa_Services_SARL_Pro#readme"
 }
