@@ -1,7 +1,8 @@
 .footer{
 font-family: Montserrat, sans-serif;
 background-image: url(../images/335459-world-map-dark-photoshopped-world_map-748x468.jpg);
-
+background-repeat: no-repeat;
+background-size: cover;
 overflow: auto ;
 
     .footer__sujet{
@@ -37,4 +38,23 @@ overflow: auto ;
 
         }
     }
+}
+
+
+
+@media screen and (max-width:768px){
+    .footer{
+        .footer__sujet{
+            display: block;
+            .footer__ap{
+                width: 80%;
+            }
+        }
+
+    }
+
+
+
+
+
 }

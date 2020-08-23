@@ -2,8 +2,9 @@
 .contact {
   margin-top: 35px;
   background-image: url(../images/bg-construction-2.jpg);
+  background-attachment: fixed;
   background-size: cover;
-  height: 379px;
+  overflow: hidden;
 }
 
 .contact .contact__par {
@@ -11,6 +12,7 @@
   padding: 20px 30px;
   float: right;
   background-color: #f0f0f7c4;
+  font-family: Montserrat,  sans-serif;
 }
 
 .contact .contact__par .contact__par__list {
@@ -26,9 +28,27 @@
           align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .contact .contact__par {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 200px;
+    font-size: 14px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 40px;
+  }
+}
+
 .footer {
   font-family: Montserrat, sans-serif;
   background-image: url(../images/335459-world-map-dark-photoshopped-world_map-748x468.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: auto;
 }
 
@@ -70,6 +90,20 @@
   background-color: #39339a;
 }
 
+@media screen and (max-width: 768px) {
+  .footer .footer__sujet {
+    display: block;
+  }
+  .footer .footer__sujet .footer__ap {
+    width: 80%;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .CHOISIR {
   color: black;
   text-align: center;
@@ -96,20 +130,21 @@
           justify-content: space-evenly;
   margin-top: 50px;
   background-image: url(../images/diapo33.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 450px;
+  overflow: hidden;
   font-family: Montserrat, sans-serif;
 }
 
 .pourquoi .pourquoi__srv {
   border: #39339a 1px solid;
-  width: 225px;
-  height: 250px;
+  width: 250px;
+  margin-bottom: 160px;
   font-size: 15px;
   text-align: center;
-  padding: 15px;
-  background-color: rgba(238, 238, 238, 0.479);
+  padding: 5px;
+  background-color: rgba(238, 238, 238, 0.377);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
@@ -118,5 +153,21 @@
   -webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);
   background-color: rgba(255, 255, 255, 0);
+}
+
+@media screen and (max-width: 768px) {
+  .pourquoi {
+    display: block;
+  }
+  .pourquoi .pourquoi__srv {
+    margin-bottom: 15px;
+    width: 180px;
+    height: 205px;
+    font-size: 13px;
+  }
+  .pourquoi .pourquoi__srv img {
+    width: 70px;
+    height: 70px;
+  }
 }
 /*# sourceMappingURL=choisir.css.map */

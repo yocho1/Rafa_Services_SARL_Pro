@@ -1,8 +1,9 @@
 .contact {
   margin-top: 35px;
   background-image: url(../images/bg-construction-2.jpg);
+  background-attachment: fixed;
   background-size: cover;
-  height: 379px;
+  overflow: hidden;
 }
 
 .contact .contact__par {
@@ -10,6 +11,7 @@
   padding: 20px 30px;
   float: right;
   background-color: #f0f0f7c4;
+  font-family: Montserrat,  sans-serif;
 }
 
 .contact .contact__par .contact__par__list {
@@ -23,5 +25,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .contact .contact__par {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 200px;
+    font-size: 14px;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 30px 40px;
+  }
 }
 /*# sourceMappingURL=services.css.map */
