@@ -59,7 +59,7 @@
         <img src="img/1.png" alt="photo" class="one">
          <button type="button" class="btn btn-dark">ENVOYER</button>
         </div>
-    </center>
+        </center>
   </form>
 <!-- end form -->
 
