@@ -1,0 +1,60 @@
+.footer{
+font-family: Montserrat, sans-serif;
+background-image: url(../images/335459-world-map-dark-photoshopped-world_map-748x468.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+overflow: auto ;
+
+    .footer__sujet{
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    
+
+        .footer__ap{
+            width: 50%;
+            padding: 20px;
+            
+            .line-footer{
+                width: 8%;
+                height: 2px;
+                background-color: #39339a;
+            }
+        }
+    }
+    .footer__fonaw{
+        font-size: 30px;
+        float: right;
+        margin-right: 80px;
+        I{
+            color: #39339a;
+            padding: 15px;
+            cursor: pointer;
+            &:hover{
+                color: white;
+                background-color: #39339a;
+
+            }
+
+        }
+    }
+}
+
+
+
+@media screen and (max-width:768px){
+    .footer{
+        .footer__sujet{
+            display: block;
+            .footer__ap{
+                width: 80%;
+            }
+        }
+
+    }
+
+
+
+
+
+}

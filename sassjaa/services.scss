@@ -1,0 +1,44 @@
+
+.contact{
+    margin-top: 35px;
+    background-image: url(../images/bg-construction-2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    
+    .contact__par{
+        width: 40%;
+        padding: 20px 30px;
+        float: right;
+        background-color: #f0f0f7c4;
+        font-family: Montserrat,  sans-serif;
+        .contact__par__list{
+            margin-top: 35px;
+            li{
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+    }
+   
+  
+}
+
+
+@media screen and (max-width:768px){
+
+.contact{
+    .contact__par{
+        width: 100%;
+        display: flex;
+        margin-top: 200px;
+        font-size: 14px;
+        text-align: center;
+        align-items: center;
+        padding: 30px 40px;
+
+    }
+}
+}
+

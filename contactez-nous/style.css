@@ -1,0 +1,14 @@
+h2{
+    font-size:3rem !important;
+    font-weight: bold;
+}
+.one{
+    height:2rem !important;
+    width: 2rem !important;
+}
+.two{
+background-position: center;
+background-size: cover;
+width: 100%;
+height:32rem !important
+}

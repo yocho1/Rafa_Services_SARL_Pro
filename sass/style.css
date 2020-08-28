@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* navbar */
+#home .navbar {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background: white !important;
+}
+
+.navbar-brand img {
+  height: 4rem;
+}
+
+div .navbar-nav li {
+  padding-right: .9rem;
+}
+
+div .navbar-dark .navbar-nav .nav-link {
+  color: #4B4B4B;
+  padding-top: .8rem;
+}
+
+div .navbar-dark .navbar-nav .nav-link.active,
+div .navbar-dark .navbar-nav .nav-link:hover {
+  color: #39339a;
+}
+
+nav .navbar-toggler {
+  background-color: #222222;
+}
+
+/* slider */
+.s1 {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../assets/slide1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/slide1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.s2 {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../assets/piscine.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/piscine.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.s3 {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(../assets/slide1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/slide1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 38%;
+  text-transform: uppercase;
+}
+
+.carousel-caption h1 {
+  font-weight: 700;
+  letter-spacing: .3;
+  padding-bottom: 1rem;
+}
+
+.carousel-caption p {
+  letter-spacing: .3;
+  padding-bottom: 1rem;
+}
+
+.carousel-item .btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1.1rem;
+}
+
+.carousel-item .btn-lg:hover {
+  background-color: #39339a;
+  color: white;
+}
+
+.section-presentation {
+  text-align: center;
+}
+
+.section-presentation h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.section-presentation h2:after {
+  display: block;
+  margin: 0 auto;
+  background-color: #39339a;
+  height: 2px;
+  width: 20%;
+  content: "";
+  margin-top: 20px;
+}
+
+.section-presentation p {
+  line-height: 190%;
+  margin-left: 15%;
+  width: 70%;
+  padding-bottom: 30px;
+}
+
+.section-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.section-details div {
+  border: 1px solid  #39339a;
+}
+
+.section-details .col1 {
+  margin-bottom: 20px;
+}
+
+.section-details .col1 img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 30%;
+  margin-bottom: 10px;
+}
+
+.section-details .col1 h3, .section-details .col1 p {
+  text-align: center;
+}
+
+.section-details .col2 {
+  margin-bottom: 20px;
+}
+
+.section-details .col2 img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 30%;
+  margin-bottom: 10px;
+}
+
+.section-details .col2 h3, .section-details .col2 p {
+  text-align: center;
+}
+
+.section-details .col3 {
+  margin-bottom: 20px;
+}
+
+.section-details .col3 img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 30%;
+  margin-bottom: 10px;
+}
+
+.section-details .col3 h3, .section-details .col3 p {
+  text-align: center;
+}
+
+.section-details .col4 {
+  margin-bottom: 20px;
+}
+
+.section-details .col4 img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  left: 30%;
+  margin-bottom: 10px;
+}
+
+.section-details .col4 h3, .section-details .col4 p {
+  text-align: center;
+}
+
+.projects-section {
+  margin-top: 30px;
+}
+
+.projects-section h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.projects-section h2:after {
+  display: block;
+  margin: 0 auto;
+  background-color: #39339a;
+  height: 2px;
+  width: 20%;
+  content: "";
+  margin-top: 20px;
+}
+
+.projects-section .projects-showcase {
+  margin-top: 20px;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  justify-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.projects-section .projects-showcase li {
+  width: 25%;
+}
+
+.projects-section .projects-showcase li figure {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.projects-section .projects-showcase li figure img {
+  width: 100%;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  opacity: 0.7;
+}
+
+.projects-section .projects-showcase li figure img:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+* {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+@import "services";
+@import "footer";
+
+
+*{
+    box-sizing: border-box;
+}
+
+.CHOISIR{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Montserrat,  sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-size: 180%;
+    
+}
+.line{
+    width: 17%;
+    height: 2px;
+    background-color: #39339a;
+    display: block;
+    margin: 0 auto;
+}
+
+.pourquoi{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    background-image: url(../images/diapo33.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    font-family: Montserrat, sans-serif;
+    .pourquoi__srv{
+        border: #39339a 1px solid;
+        width: 250px;
+        margin-bottom: 160px;
+        font-size: 15px;
+        text-align: center;
+        padding: 5px;
+        background-color: rgba(238, 238, 238, 0.377);
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        &:hover{
+            -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+            background-color: rgba(255, 255, 255, 0) ;
+
+        }
+          
+    }
+}
+
+@media screen and (max-width:768px){
+.pourquoi{
+    display: block;
+    .pourquoi__srv{
+        margin-bottom: 15px;
+        width:  180px;
+        height: 205px;
+        font-size: 13px;
+        img{
+            width: 70px;
+            height: 70px;
+        }
+    }
+    
+}
+
+}
