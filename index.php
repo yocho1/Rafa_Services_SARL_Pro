@@ -6,7 +6,7 @@
     <title>Rafa Services SARL</title>
     <!-- css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
+
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- bootstrap js -->
@@ -32,7 +32,7 @@
                     <a class="nav-link" href="#about">À PROPOS DE NOUS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">CONTACTEZ-NOUS</a>
+                    <a class="nav-link" href="contactez-nous/contact.php">CONTACTEZ-NOUS</a>
                 </li>
                 <form class="form-inline">
                     <i class="fas fa-search" aria-hidden="true"></i>
@@ -56,7 +56,7 @@
                 <div class="carousel-caption text-center">
                     <h1 class="h">RAFA.MA</h1>
                     <p class="sh">Lorem qui fugiat vero animi quasi fugiat vero animi</p>
-                    <a class="btn btn-outline-light btn-lg" href="#contact">Contactez-nous</a>
+                    <a class="btn btn-outline-light btn-lg" href="contactez-nous/contact.php">Contactez-nous</a>
                 </div>
             </div>
             <!-- slide 2 -->
@@ -142,6 +142,7 @@
         </ul>
 
     </section>
+    <?php include 'service.php'; ?>
 </div>
 </body>
 </html>

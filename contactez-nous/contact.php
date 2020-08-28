@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,10 +17,13 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <link rel="shortcut icon" type="image/png" href="img/logo.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="contact.css">
 </head>
 <body>
-
+<!-- nav bar -->
+<?php $nav_path = $_SERVER['DOCUMENT_ROOT'];
+      $nav_path = '../html-sections/nav.php'; 
+      include ($nav_path); ?>
 
 <!-- :::::::::::::::  Contact  :::::::::::::::::::: -->
 <div class="container">
@@ -54,8 +56,8 @@
         </div>
         <center>
         <div class="mx-auto justify-content-center pb-4">
-  <img src="img/1.png" alt="photo" class="one">
-<button type="button" class="btn btn-dark">ENVOYER</button>
+        <img src="img/1.png" alt="photo" class="one">
+         <button type="button" class="btn btn-dark">ENVOYER</button>
         </div>
     </center>
   </form>
@@ -64,6 +66,9 @@
     </div>
 
     <img src="img/local.png" alt="photo" class="img-fluid image-responsive w-100 pt-2 two">
+    <?php $footer_path = $_SERVER['DOCUMENT_ROOT'];
+          $footer_path = '../html-sections/footer.php'; 
+          include ($footer_path);?>
 
 
 
