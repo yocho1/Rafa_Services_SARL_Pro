@@ -17,7 +17,7 @@
 
 <body class="bgrnd" data-spy='scroll' data-target="#navbarResponsive">
 <div id="home">
-         <!-- navbar -->
+    <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="index.html"><img src="../images/logomini.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle='collapse' data-target="#navbarResponsive">
@@ -44,21 +44,21 @@
     </nav>
     </div>
 
-
+    <!-- form -->
     <div class="container">
-        <form action="webform.php" method="POST" class="form">
+        <form action="contact.php" method="POST" class="form">
             <h2>Contact</h2>
             <div class="form-group">
                 <label for="name" class="form-label">Your Name</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Jane Doe" tabindex="1" required>
+                <input type="text" class="form-control" id="name" name="name" placeholder="name" tabindex="1" required>
             </div>
             <div class="form-group">
                 <label for="email" class="form-label">Your Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="jane@doe.com" tabindex="2" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="email" tabindex="2" required>
             </div>
             <div class="form-group">
                 <label for="subject" class="form-label">Subject</label>
-                <input type="text" class="form-control" id="subject" name="subject" placeholder="Hello There!" tabindex="3" required>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="subject" tabindex="3" required>
             </div>
             <div class="form-group">
                 <label for="message" class="form-label">Message</label>
