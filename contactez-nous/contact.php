@@ -1,17 +1,24 @@
 <?php
+$message_sent = false;
+if(isset($_POST['email']) && $_POST['email'] != ""){
+    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+            $userName = $_POST['name'];
+            $userEmail = $_POST['email'];
+            $messageSubject = $_POST['subject'];
+            $message = $_POST['message'];
 
-$userName = $_POST['name'];
-$userEmail = $_POST['email'];
-$messageSubject = $_POST['subject'];
-$message = $_POST['message'];
+            $to = "support@rafa.ma";
+            $body = "";
 
-$to = "support@rafa.ma";
-$body = "";
+            $body .= "From: ".$userName. "\r\n";
+            $body .= "Email: ".$userEmail. "\r\n";
+            $body .= "Message: ".$message. "\r\n";
 
-$body .= "From: ".$userName. "\r\n";
-$body .= "Email: ".$userEmail. "\r\n";
-$body .= "Message: ".$message. "\r\n";
+            // mail($to,$messageSubject,$body);
 
+            $message_sent = true;
+    }
+}
 
 ?>
 
@@ -24,11 +31,6 @@ $body .= "Message: ".$message. "\r\n";
     <link rel="stylesheet" href="contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-        <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/7db0581a81.js" crossorigin="anonymous"></script>
     <!-- js -->
     <script src="main.js"></script>
 </head>
@@ -63,6 +65,9 @@ $body .= "Message: ".$message. "\r\n";
     </div>
 
     <!-- form -->
+    <?php if($message_sent): ?>
+    <div class="suc">Thanks, we'll be in touch</div>
+    <?php else: ?>
     <div class="container">
         <form action="contact.php" method="POST" class="form">
             <h2>Contact</h2>
@@ -87,6 +92,7 @@ $body .= "Message: ".$message. "\r\n";
             </div>
         </form>
     </div>
+    <?php endif; ?>
 
 
 
