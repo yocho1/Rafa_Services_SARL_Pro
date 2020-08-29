@@ -43,33 +43,6 @@
 
     </nav>
     </div>
-<<<<<<< HEAD
-=======
-    <div class="form-group w-75">
-      <!-- <label for="exampleInputPassword1">Password</label> -->
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
-    </div>
-    <div class="form-group w-75">
-        <!-- <label for="exampleInputPassword1">Password</label> -->
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Numéro de télephone">
-      </div>
-      <div class="form-group w-75">
-        <!-- <label for="exampleInputPassword1">Password</label> -->
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="SUJET">
-      </div>
-        <div class="form-group">
-          <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
-          <textarea class="form-control" id="exampleFormControlTextarea1"  placeholder="MESSAGE ICI" rows="9"></textarea>
-        </div>
-        <center>
-        <div class="mx-auto justify-content-center pb-4">
-        <img src="img/1.png" alt="photo" class="one">
-         <button type="button" class="btn btn-dark">ENVOYER</button>
-        </div>
-        </center>
-  </form>
-<!-- end form -->
->>>>>>> 3b39740e57f39529f69b346c50d0c7fa3d69131b
 
 
     <div class="container">
