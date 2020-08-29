@@ -1,3 +1,12 @@
+<?php
+
+$userName = $_POST['name'];
+$userEmail = $_POST['email'];
+$messageSubject = $_POST['subject'];
+$message = $_POST['message'];
+?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
