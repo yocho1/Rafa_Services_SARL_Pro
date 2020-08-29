@@ -39,7 +39,7 @@ if(isset($_POST['email']) && $_POST['email'] != ""){
 <div id="home">
     <!-- navbar -->
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="index.html"><img src="../images/logomini.png" alt="logo"></a>
+        <a class="navbar-brand" href="../index.php"><img src="../images/logomini.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle='collapse' data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
         </button>
