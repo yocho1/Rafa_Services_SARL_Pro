@@ -1,27 +1,123 @@
-.container{
-position: relative;
-top : 5%;
-padding-top:10%;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    height:100vh;
+    font-family:"Raleway", sans-serif;
+    background-color: #aaa;
+    
 }
 
+/* navbar */
+#home .navbar {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background:#212529 !important; }
+
+.navbar-brand img {
+  height: 4rem; }
+
+div .navbar-nav li {
+  padding-right: .9rem; }
+
+div .navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  padding-top: .8rem; }
+
+div .navbar-dark .navbar-nav .nav-link.active,
+div .navbar-dark .navbar-nav .nav-link:hover {
+  color: #1004ff; }
+
+nav .navbar-toggler {
+  background-color: #222222; }
+
+.container{
+    width:500px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    padding:2em;
+    margin-bottom: 5%;
+    margin-top: 10%;
+    background-color:#fff;
+}
 .container h2{
-    font-size:3rem !important;
-    font-weight: bold;
-    margin-top: 10px;
+    text-align: center;
+    color: #212529;
+    font-size: 180%;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-transform: uppercase;
 }
-.container h4{
-    margin-top: 10px;
+.form-group{
+    margin-bottom:1.5em;
+    transition:all .3s;
 }
-.container p{
-    margin-top: 10px;
+.form-label{
+    font-size:.75em;
+    color:var(--font-color);
+    display:block;
+    opacity:0;
+    transition: all .3s;
+    transform:translateX(-50px);
 }
-.one{
-    height:2rem !important;
-    width: 2rem !important;
+.form-control{
+    box-shadow:none;
+    border-radius:0;
+    border-color:#ccc;
+    border-style:none none solid none;
+    width:100%;
+    font-size:1.25em;
+    transition:all .6s;
 }
-.two{
-background-position: center;
-background-size: cover;
-width: 100%;
-height:32rem !important
+.form-control::placeholder{
+    color:#aaa;
 }
+.form-control:focus{
+    box-shadow:none;
+    border-color:var(--font-hover-color);
+    outline:none;
+}
+.form-group:focus-within{
+    transform:scale(1.1,1.1);
+}
+
+.form-control:invalid:focus{
+    border-color:red;
+}
+.form-control:valid:focus{
+    border-color:green;
+}
+
+.btn{
+    background: 0 0 #fff;
+    border:1px solid #aaa;
+    border-radius:3px;
+    color:var(--font-color);
+    font-size:1em;
+    padding:10 50px;
+    text-transform:uppercase;
+}
+.btn:hover{
+    border-color:var(--font-hover-color);
+    color:var(--font-hover-color);
+}
+textarea{
+    resize:none;
+}
+
+
+
+.focused > .form-label{
+    opacity:1;
+    transform:translateX(0px);
+
+}
+
+
+#map {
+    width: 100%;
+    height: 600px;
+    background-color: grey;
+  }
