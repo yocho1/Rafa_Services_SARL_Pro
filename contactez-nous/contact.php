@@ -1,22 +1,20 @@
 <?php
+
 $message_sent = false;
+include('db.php');
 if(isset($_POST['email']) && $_POST['email'] != ""){
     if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
-            $userName = $_POST['name'];
-            $userEmail = $_POST['email'];
-            $messageSubject = $_POST['subject'];
-            $message = $_POST['message'];
-
-            $to = "support@rafa.ma";
-            $body = "";
-
-            $body .= "From: ".$userName. "\r\n";
-            $body .= "Email: ".$userEmail. "\r\n";
-            $body .= "Message: ".$message. "\r\n";
-
-            // mail($to,$messageSubject,$body);
-
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+        
+        $query="INSERT INTO contact (cname,cemail,csubject,cmessage) "; 
+        $query.="VALUES('$name','$email','$subject','$message')";
+        $run = mysqli_query($db,$query);
+        if($run){
             $message_sent = true;
+        }
     }
 }
 
@@ -52,7 +50,7 @@ if(isset($_POST['email']) && $_POST['email'] != ""){
                     <a class="nav-link" href="#about">À PROPOS DE NOUS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contactez-nous/contact.php">CONTACTEZ-NOUS</a>
+                    <a class="nav-link" href="#">CONTACTEZ-NOUS</a>
                 </li>
                 <form class="form-inline">
                     <i class="fas fa-search" aria-hidden="true" style="color : #fff"></i>
