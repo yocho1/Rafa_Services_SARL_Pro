@@ -1,91 +1,104 @@
-<!DOCTYPE html>
+<?php
+
+$message_sent = false;
+include('db.php');
+if(isset($_POST['email']) && $_POST['email'] != ""){
+    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+        
+        $query="INSERT INTO contact (cname,cemail,csubject,cmessage) "; 
+        $query.="VALUES('$name','$email','$subject','$message')";
+        $run = mysqli_query($db,$query);
+        if($run){
+            $message_sent = true;
+        }
+    }
+}
+
+?>
+
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/css/mdb.min.css" rel="stylesheet">
-
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<link rel="shortcut icon" type="image/png" href="img/logo.png">
-<link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- js -->
+    <script src="main.js"></script>
 </head>
-<body>
-<!-- nav bar -->
-<?php $nav_path = $_SERVER['DOCUMENT_ROOT'];
-      $nav_path = '../html-sections/nav.php'; 
-      include ($nav_path); ?>
 
-<!-- :::::::::::::::  Contact  :::::::::::::::::::: -->
-<div class="container">
-<h2 class="text-center mb-4">Contact</h2>
-<h4 class="text-center text-capitalize text-success">Bienvenue dans notre espace contact !</h4>
-<p class="text-muted pb-3 w-75 mx-auto text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et nisi perspiciatis
-     inventore suscipit. Eius ipsa aperiam odit </p>
-
-<!-- start form -->
-<form>
-    <div class="form-group w-75">
-      <!-- <label for="exampleInputEmail1">Email address</label> -->
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom Complet">    
-    </div>
-    <div class="form-group w-75">
-      <!-- <label for="exampleInputPassword1">Password</label> -->
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Email">
-    </div>
-    <div class="form-group w-75">
-        <!-- <label for="exampleInputPassword1">Password</label> -->
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Numéro de télephone">
-      </div>
-      <div class="form-group w-75">
-        <!-- <label for="exampleInputPassword1">Password</label> -->
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="SUJET">
-      </div>
-        <div class="form-group">
-          <!-- <label for="exampleFormControlTextarea1">Example textarea</label> -->
-          <textarea class="form-control" id="exampleFormControlTextarea1"  placeholder="MESSAGE ICI" rows="9"></textarea>
+<body class="bgrnd" data-spy='scroll' data-target="#navbarResponsive">
+<div id="home">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="../index.php"><img src="../images/logomini.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle='collapse' data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.php">ACCUEIL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">À PROPOS DE NOUS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACTEZ-NOUS</a>
+                </li>
+                <form class="form-inline">
+                    <i class="fas fa-search" aria-hidden="true" style="color : #fff"></i>
+                </form>
+                
+            </ul>
         </div>
-        <center>
-        <div class="mx-auto justify-content-center pb-4">
-        <img src="img/1.png" alt="photo" class="one">
-         <button type="button" class="btn btn-dark">ENVOYER</button>
-        </div>
-        </center>
-  </form>
-<!-- end form -->
 
+    </nav>
     </div>
 
-    <img src="img/local.png" alt="photo" class="img-fluid image-responsive w-100 pt-2 two">
-    <?php $footer_path = $_SERVER['DOCUMENT_ROOT'];
-          $footer_path = '../html-sections/footer.php'; 
-          include ($footer_path);?>
+    <!-- form -->
+    <?php if($message_sent): ?>
+    <div class="suc">Thanks, we'll be in touch</div>
+    <?php else: ?>
+    <div class="container">
+        <form action="contact.php" method="POST" class="form">
+            <h2>Contact</h2>
+            <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="name" tabindex="1" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="email" tabindex="2" required>
+            </div>
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="subject" tabindex="3" required>
+            </div>
+            <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" rows="5" cols="50" id="message" name="message" placeholder="Enter Message..." tabindex="4"></textarea>
+            </div>
+            <div>
+                <button type="submit" class="btn">Send Message!</button>
+            </div>
+        </form>
+    </div>
+    <?php endif; ?>
 
 
 
-  
-     <!-- :::::::::::::::::::::: -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.16.0/js/mdb.min.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  
-  </body>
-  </html>
-    
+    <!--google maps -->
+    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d53991.30557888606!2d-8.560655203672853!3d32.24579502057716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdaefcd3cdac94a5%3A0x2cfe67e059e518d!2sYoussoufia!5e0!3m2!1sen!2sma!4v1598690248469!5m2!1sen!2sma" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+
+    <!-- footer -->
+    <?php include '../html-sections/footer.php'; ?>
+</body>
+
+</html>
