@@ -50,7 +50,7 @@ if(isset($_POST['email']) && $_POST['email'] != ""){
                     <a class="nav-link" href="../index.php">ACCUEIL</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">À PROPOS DE NOUS</a>
+                    <a class="nav-link" href="../propos/index.php">À PROPOS DE NOUS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">CONTACTEZ-NOUS</a>

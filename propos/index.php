@@ -24,13 +24,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#home">ACCUEIL</a>
+                    <a class="nav-link" href="../index.php">ACCUEIL</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">À PROPOS DE NOUS</a>
+                    <a class="nav-link" href="#">À PROPOS DE NOUS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contactez-nous/contact.php">CONTACTEZ-NOUS</a>
+                    <a class="nav-link" href="../contactez-nous/contact.php">CONTACTEZ-NOUS</a>
                 </li>
                 <form class="form-inline">
                     <i class="fas fa-search" aria-hidden="true" style="color : #fff"></i>
