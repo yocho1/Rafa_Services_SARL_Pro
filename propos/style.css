@@ -5,6 +5,7 @@
 }
 
 .s1{
+    margin-top: 10%;
     padding-top: 15px;
     padding-left: 7px;
     display: flex;
@@ -59,7 +60,7 @@
     background-image: url(img/0b3067a43c0f.jpg);
     background-size: cover;
     padding: 50px 0px;
-    font-family: 'Roboto', Arial , sans-serif;
+    font-family: 'Montserrat', Arial , sans-serif;
     margin: 0;
     height: 100%;
     
@@ -128,3 +129,35 @@
 
 
 }
+
+/* nav */
+
+/* navbar */
+#home .navbar {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  background:#33373b !important; }
+
+.navbar-brand img {
+  height: 4rem; }
+
+div .navbar-nav li {
+  padding-right: .9rem; }
+
+div .navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  padding-top: .8rem; }
+
+div .navbar-dark .navbar-nav .nav-link.active,
+div .navbar-dark .navbar-nav .nav-link:hover {
+  color: #1004ff; }
+
+nav .navbar-toggler {
+  background-color: #222222; }
+
+
+
+
+

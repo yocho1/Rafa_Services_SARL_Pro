@@ -8,12 +8,12 @@ body{
 }
 
 /* navbar */
-#home .navbar {
+ #home .navbar {
   text-transform: uppercase;
   font-weight: 500;
   font-size: .9rem;
   letter-spacing: .1rem;
-  background:#212529 !important; }
+  background:#343638 !important; }
 
 .navbar-brand img {
   height: 4rem; }
