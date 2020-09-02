@@ -77,7 +77,7 @@
         <div class="pro2">
             <div class="progsbar">
                 <div class="para3"><p>Construction métallique.</p></div>
-                <div class="progress-bar">
+                <div class="progress-bar1">
                     <div class="label" data-count="100">100%</div>
                     <div class="line" style="width:500px">
                       <span></span>
@@ -86,7 +86,7 @@
             </div>     
             <div class="progsbar">
                 <div class="para3"><p>Maintenance industriel                </p></div>
-                <div class="progress-bar">
+                <div class="progress-bar1">
                     <div class="label" data-count="100">100%</div>
                     <div class="line" style="width:500px">
                       <span></span>
@@ -95,7 +95,7 @@
             </div> 
             <div class="progsbar">
                 <div class="para3"><p>Génie civil                </p></div>
-                <div class="progress-bar">
+                <div class="progress-bar1">
                     <div class="label" data-count="100">100%</div>
                     <div class="line" style="width:500px">
                       <span></span>
@@ -104,7 +104,7 @@
             </div> 
             <div class="progsbar"> 
                 <div class="para3"><p>Réseaux divers</p></div>
-                <div class="progress-bar">
+                <div class="progress-bar1">
                     <div class="label" data-count="100">100%</div>
                     <div class="line" style="width:500px">
                       <span></span>
