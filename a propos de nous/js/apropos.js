@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
   
-    var progressBar = document.querySelectorAll(".progress-bar");
+    var progressBar = document.querySelectorAll(".progress-bar1");
     var time = 1500;
     
   

@@ -29,7 +29,7 @@
                     <a class="nav-link" href="#home">ACCUEIL</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="propos/index.php">À PROPOS DE NOUS</a>
+                    <a class="nav-link" href="a propos de nous/index.php">À PROPOS DE NOUS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="contactez-nous/contact.php">CONTACTEZ-NOUS</a>

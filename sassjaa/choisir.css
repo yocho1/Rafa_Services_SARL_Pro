@@ -4,7 +4,6 @@
   background-image: url(../images/bg-construction-2.jpg);
   background-attachment: fixed;
   background-size: cover;
-  overflow: hidden;
 }
 
 .contact .contact__par {
@@ -49,7 +48,6 @@
   background-image: url(../images/335459-world-map-dark-photoshopped-world_map-748x468.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: auto;
 }
 
 .footer .footer__sujet {
@@ -113,7 +111,7 @@
   font-size: 180%;
 }
 
-.line {
+.linee {
   width: 17%;
   height: 2px;
   background-color: #39339a;
@@ -133,17 +131,17 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
   font-family: Montserrat, sans-serif;
 }
 
 .pourquoi .pourquoi__srv {
   border: #39339a 1px solid;
+  color: white;
   width: 250px;
   margin-bottom: 160px;
   font-size: 15px;
   text-align: center;
-  padding: 5px;
+  padding: 7px;
   background-color: rgba(238, 238, 238, 0.377);
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;

@@ -4,29 +4,42 @@
   padding: 0;
 }
 
-.s1{
-    margin-top: 10%;
-    padding-top: 15px;
+.travaux{
+    padding-top:  30px;
     padding-left: 7px;
     display: flex;
     justify-content: space-evenly;
+    height: 50%;
+}
+.ig{
+  width: 80%;
+  padding-top: 30px;
 }
 .global{
     margin-left: 20px;
 }
+.divers{
+  text-align: center;
+
+}
 .titre{
     color: rgb(107, 57, 201);
     font-size: 25px;
+    margin-top: 100px;
 }
 .bgr{
     background-color: rgb(53, 34, 216);
     width: 140px;
     height: 3px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .para{
     padding-top: 17px; 
+    font-size: 15px;
 }
-.s2{
+.forte{
     /* text-align: center; */
     margin-top: 100px;
 
@@ -37,12 +50,12 @@
 }
 
 
-.bgr2{
+/* .bgr2{
     background-color: rgb(53, 34, 216);
     margin-left: 448px;
     width: 140px;
     height: 3px;
-}
+} */
 .titre2{
     color: rgb(107, 57, 201);
     font-size: 25px;
@@ -60,10 +73,9 @@
     background-image: url(img/0b3067a43c0f.jpg);
     background-size: cover;
     padding: 50px 0px;
-    font-family: 'Montserrat', Arial , sans-serif;
+    font-family: 'Roboto', Arial , sans-serif;
     margin: 0;
     height: 100%;
-    
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -72,35 +84,30 @@
 
 }
 .progsbar {
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 .para3{
-    font-size: 22px;
-    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
-  /* .progress-bar{
-    display: flex;
-    flex-direction: column;
-  } */
   
-  .progress-bar1 .line{
+.line{
     height: 10px;
     background: #e8e8e8;
     border-radius: 7px;
     position: relative;
-  }
+}
   
-  .progress-bar1 .label{
-    font-size: 30px;
-    position: relative;
-    bottom: 30px;
+  .label{
+    font-size: 23px;
+
     float: right;
     
     
   }
   
-  .progress-bar1 > .line > span{
+  span{
     position: absolute;
     left: 0;
     top: 0;
@@ -129,35 +136,3 @@
 
 
 }
-
-/* nav */
-
-/* navbar */
-#home .navbar {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: .9rem;
-  letter-spacing: .1rem;
-  background:#33373b !important; }
-
-.navbar-brand img {
-  height: 4rem; }
-
-div .navbar-nav li {
-  padding-right: .9rem; }
-
-div .navbar-dark .navbar-nav .nav-link {
-  color: #fff;
-  padding-top: .8rem; }
-
-div .navbar-dark .navbar-nav .nav-link.active,
-div .navbar-dark .navbar-nav .nav-link:hover {
-  color: #1004ff; }
-
-nav .navbar-toggler {
-  background-color: #222222; }
-
-
-
-
-

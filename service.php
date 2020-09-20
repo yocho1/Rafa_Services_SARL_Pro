@@ -43,7 +43,7 @@
     <div>
         <div>
             <h2 class="CHOISIR">SERVICES</h2>
-            <div class="line"></div>
+            <div class="linee"></div>
         </div>
         <div class="contact">
             <div class="contact__par">
