@@ -128,10 +128,20 @@
 
 
 @media screen and (max-width:768px) {
-    .s1{
+    
+  .divers{
+    padding-top: 50px;
+  }
+  
+  
+  .travaux{
         display: block;
         margin-left: auto;
         margin-right: auto;
+        text-align: center;
+    }
+    .para{
+      padding: 40px;
     }
 
 
